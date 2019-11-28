@@ -36,6 +36,29 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 - **4. Hyperbolic Tangent Function**
 - Hyperbolic Tanget function changes from -1,-1<F(x)<1 to 1.The formula of function is: **F(x)=[1-pow(e,-2x)]/[1+pow(e,-2x)]**
 
+## Hidden Layer in ANNs
+- As we know a simple ANN consists of inputs with weight,an activation function and an output.
+- In most cases the reach the ultimate goal we need some **hidden layers** which are n of neurons with different or same activation functions.
+- In such ANN systems,we get the weighted inputs and send them to hidden layer neurons.The hidden layer uses activation function to find the output.The calculated output will be the input of the output neuron and this ultimate neuron will also have an another activation function.
+
+- **AND Gate Example**
+- Let's say we have two inputs A and B respectively.And we try to construct a neural network for it and let's say threshold value should be **T=1.5** and our step function for this should be **Step Function**.Plus,weight for both input signal should be equal to 1
+A B Z(Output)
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+-Let's calculate for 
+W1A W2B W1A+W2B=F(X)
+0   0    0
+0   1    1
+1   0    1
+1   1    2
+
+- According to the **Step Function** if F(X)>T(X) where T(X) is the threshold value then output is set to 1 otherweise 0.
+- For first three row the output will 0 since,they all are smaller than T(X),the rest will be equal to 1.
+- For such an ANN provides the condition of **AND GATE**.
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
