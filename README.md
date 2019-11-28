@@ -10,6 +10,7 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
   - **Graident Descent**
   - **Sthocastic Gradient Descent**
   - **Backpropogation**
+  - **Forwardpropogation**
   
 ## Neuron Science & Role of Neurons & Synapsis in Intelligent Systems
 - In human body neurons affect the decision taking,forming the actions even the reflexes.From this angle,neurans are included in terms of human thinking and acting.
@@ -21,6 +22,19 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 - Plus,there can be multi-variant systems which means that there can be multiple output.
 - To obtain the output,we need a function.Let's call it **f(xi),where x £ N**.This function calculates the output.
 - To activate the neuron we need an **activation function**.There many types of activation functions.Let's call it F and it takes weighted input signal as parameter.So, **F[(w1x1+w2x2+...+wmxn)]**
+
+## Activation Functions
+- To activate the signal to produce an output we need an **activation function**
+- Activation function can be any function like sigmoid,sinus,cosinus,x2,x3 etc.However there are couple of mostly used activation functions which provide an advantage to ANNs.
+- Some of them is listed here:
+- **1.Step Function**
+- Step function changes from 0 to 1 when a determined threshold value is exceeded.
+- **2.Sigmoid Function**
+- Sigmoid function changes from 0 , 0<F(x)<1 to 1.The formula of function is **F(X)=1/1+pow(e,-x)**
+- **3.Rectifier Function**
+-Rectifier function changes from 0, 0<F(x)<1 to max(x,0)
+- **4. Hyperbolic Tangent Function**
+- Hyperbolic Tanget function changes from -1,-1<F(x)<1 to 1.The formula of function is: **F(x)=[1-pow(e,-2x)]/[1+pow(e,-2x)]**
 
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
