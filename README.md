@@ -43,17 +43,17 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 
 - **AND Gate Example**
 - Let's say we have two inputs A and B respectively.And we try to construct a neural network for it and let's say threshold value should be **T=1.5** and our step function for this should be **Step Function**.Plus,weight for both input signal should be equal to 1
-A B Z(Output)
-0 0 0
-0 1 0
-1 0 0
-1 1 1
+- A B Z(Output)
+- 0 0 0
+- 0 1 0
+- 1 0 0
+- 1 1 1
 -Let's calculate for 
-W1A W2B W1A+W2B=F(X)
-0   0    0
-0   1    1
-1   0    1
-1   1    2
+- W1A W2B W1A+W2B=F(X)
+- 0   0    0
+- 0   1    1
+- 1   0    1
+- 1   1    2
 
 - According to the **Step Function** if F(X)>T(X) where T(X) is the threshold value then output is set to 1 otherweise 0.
 - For first three row the output will 0 since,they all are smaller than T(X),the rest will be equal to 1.
