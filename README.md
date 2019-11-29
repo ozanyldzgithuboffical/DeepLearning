@@ -59,6 +59,11 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 - For first three row the output will 0 since,they all are smaller than T(X),the rest will be equal to 1.
 - For such an ANN provides the condition of **AND GATE**.
 
+## Perceptron
+- Perceptron has a sensing meaning which senses between the differences of actual and predicted value.
+- If there is an error between actual and predicted value,then a error calculation is done with this formula=**1/2*pow([actual_value-predicted value])**
+- In the first step,we determine a learning rate and if error occurs in the first time, we subtract the learning rate from the initial weights.
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
