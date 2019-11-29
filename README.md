@@ -61,7 +61,7 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 
 ## Perceptron
 - Perceptron has a sensing meaning which senses between the differences of actual and predicted value.
-- If there is an error between actual and predicted value,then a error calculation is done with this formula=**c=1/2*pow([actual_value-predicted value])**
+- If there is an error between actual and predicted value,then a error calculation is done with this formula=**c=1/2*pow([actual_value-predicted value],2)**
 - In the first step,we determine a learning rate and if error occurs in the first time, we subtract the learning rate from the initial weights.
 - Then try for the next data, if same thing happens, this time we calculate the **c value** and it is added as **penalty score** to the updated weights.Simple means that the feedback from output is given to input.
 - You can also update the threshold value but it is up to some conditions.
