@@ -107,6 +107,31 @@ model.add(Dense(8,activation='relu'))
 - It is mainly used for small or randomly generated datasets.
 - **Adam** optimizer is an algorithm for **gradient-based optimization algorithms**  of sthocastic objective functions.
 
+## PCA (Principle Component Analysis) - Dimension Reduction
+- Sometimes we need another dimension to be created from the base to classify well.We can use the same dimension size or reduce it.
+- To do that first we need to know what **Eigen Value** and **Eigen Vector**
+- Suppose we have image input matrix and when we takes its product with another matrix,if we have the same matrix with its coefficient then we can call this matrix as **Eigen vector** and the coefficient is called as **Eigen Value**
+- The algorithm simple sorts the eigen values from small to bigger.Than according to the predefined dimension size value k,we take as of it.
+- Then we create our **projection vector** called **W**
+- This vector is used to create new dimension of the feature train data.
+- **Linear Dicreminant Analysis** is another algorithm like PCA.
+
+## Convolutional Deep Neural Network (CNN)
+- It is generally used to perform well **computer vision tasks** such as **image classification,object detection,object localization** etc.
+- It has generally there types of layers **convolutional layer,pooling layer,fully connected layer**.We can use and arrange convolutional and pooling layer many times.
+- **1. Convolutional Layer** is the first layer to extract input features from input image using some **kernels** and **filters**
+- Kernel is a matrix also called **convolutional matrix/mask**.
+- Kernel size must be smaller than input image size.
+- The length that kernal slides is called **stride length**.Input image is traversed by this.
+- Number of chanelles of a kernel must be equal to number of channels of an input image.
+- We can use more kernel if want to extract different features.However,the size of the kernels must be equal to each other.
+- The last part of convolutional layer is **activation function** to increase non-linearity.
+- Generally, **relu** or **tanh** activation functions are used.
+- **2. Pooling Layer** is used to speed up the computation task and reduce the image size by making detected features more robust.
+- Pooling layer also uses kernels and strides as well
+- There are different types of pooling such as **max pooling**,**average pooling**.
+- **3.. Fully Connected Layer** is the last part of convolutional neural network.We obtain a single vector at the end for each kernal operation and in the end they are fully connected with their reduced form.
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
