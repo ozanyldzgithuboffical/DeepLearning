@@ -70,7 +70,8 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 - Loss function is used to minimize the error through the optimization of the model.
 - Model can used different optimization algorithms like sthocastic gradient descent,mini-batch descent,batch descent etc.To update the 
 weights to reduce the error,there are different loss functions for different types of classifications.
-- For instance for **regression classification** we can use **mean-square-error** or **mean-square-logarithmic-error** etc.
+- For instance for **regression classification** we can use **mean-square-error** or **mean-square-logarithmic-error** etc.Output layer
+should only one node recommended and activation function should be **linear**
 - in **Keras Framework** while optimizing the model following structure is used as a sample:
 ```python
 #create Sthocastic Gradient Descent
@@ -79,6 +80,24 @@ model.compile(loss='mean_square_error',optimizer)
 model.fit(Train_X,Test_Y,validation_data=(Test_X,Test_Y),epochs=1000,verbose=0)
 print s
 ```
+
+## Keres Fully Connected Simple Multi-Perceptron Artifical Neural Network Modelling
+- **Keras is a framework which is used to train and evaluate the models which utilizes **Tensorflow** and **Theano** libraries.
+- In Keras simply a model is create via **Sequential**
+```python
+#define model
+model=Sequential()
+model.add(Dense(20,input_dim=4,activation='relu'))
+model.add(Dense(8,activation='relu'))
+```
+-The most confusing part is the first Dense which is called hidden layer because,when you create your first hidden layer you also create your **visible layer** which has number of nodes equal to number of the input features.
+- Plus while selecting number of the nodes in hidden layer you should test your data set experimentally.No formula exists for this!!!
+- There are some terms for such models:
+- **size**: Number of the nodes in a model
+- **width**: Number of the noders in any hidden layer
+- **Depth**:The number of the **hidden layers**
+- **Capacity**:Type or structure of the functions
+- **Architecture**: Arrangement of the layers and nodes
 
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
