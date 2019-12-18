@@ -99,6 +99,14 @@ model.add(Dense(8,activation='relu'))
 - **Capacity**:Type or structure of the functions
 - **Architecture**: Arrangement of the layers and nodes
 
+## Stocasthic Gradient Descent (SGD)
+- **SGD** is an optimization algorithm used to train model parameters.
+- Optimization is a type of searching and we call it simple learning.It looks for the internal model parameters that is agains to performance measures.
+- The word **gradient** comes from calculation of error gradients or slope of error.
+- The word **descent** comes from moving down the error under that slope.
+- It is mainly used for small or randomly generated datasets.
+- **Adam** optimizer is an algorithm for **gradient-based optimization algorithms**  of sthocastic objective functions.
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
