@@ -66,6 +66,20 @@ This repo contains the basis of the Deep Learning and Artificial Neural Network 
 - Then try for the next data, if same thing happens, this time we calculate the **c value** and it is added as **penalty score** to the updated weights.Simple means that the feedback from output is given to input.
 - You can also update the threshold value but it is up to some conditions.
 
+## Loss Function
+- Loss function is used to minimize the error through the optimization of the model.
+- Model can used different optimization algorithms like sthocastic gradient descent,mini-batch descent,batch descent etc.To update the 
+weights to reduce the error,there are different loss functions for different types of classifications.
+- For instance for **regression classification** we can use **mean-square-error** or **mean-square-logarithmic-error** etc.
+- in **Keras Framework** while optimizing the model following structure is used as a sample:
+```python
+#create Sthocastic Gradient Descent
+optimizer=SGD(lr=0.01,momentum=0.87)
+model.compile(loss='mean_square_error',optimizer)
+model.fit(Train_X,Test_Y,validation_data=(Test_X,Test_Y),epochs=1000,verbose=0)
+print s
+```
+
 ## Announcement
 - Overview of Deep Learning, **Dimension Reduction** , **Model Selection** , **XGBoot** topics will be under **Deep Learning Repo** 
 - **Convolutional Neural Networks (CNN)** will be under **Artificial Intelligence Repo (AI)** 
