@@ -145,6 +145,8 @@ model.add(Dense(8,activation='relu'))
 [Natural Language Processing (NLP)](https://github.com/ozanyldzgithuboffical/NLP-Natural-Language-Processing-)
 - **Computer Vision with Deep Learning** repo will be also available later.
 - **Spring Microservices with Spring Cloud** repo will be also available later. 
+- **Computer Vision on Deep Learning Repo** is available now.
+[Computer Vision on Deep Learning Repo](https://github.com/ozanyldzgithuboffical/ComputerVisiononDeepLearning)
 
 ## About the Repo
 - This repo is open-source and aims at giving an overview about the top-latest topics that will lead learning of the basis of deep learning and intelligent systems basis.
